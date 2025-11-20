@@ -1,0 +1,49 @@
+        body {
+            background-color: lightgray;
+            font-family: sans-serif;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: 300%;
+            margin: 10px;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            background-color: gray;
+            clear: left;
+        }
+
+        h3 {
+            color: rgb(255, 255, 255);
+            background-color: gray;
+            clear: left;
+        }
+
+        .img {
+            float: left;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 10px;
+            width: 106;
+            height: 150;
+        }
+
+        .PARRAFO {
+            color: rgb(0, 0, 0);
+            text-indent: 40.9px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .N {
+            color: black;
+            background-color: white;
+        }
+
+        .Rojo {
+            color: red;
+        }

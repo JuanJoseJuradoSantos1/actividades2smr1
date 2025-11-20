@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <style>
+        /*Comentario*/
+        h1 {
+            color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            color: yellowgreen;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        legend {
+            color: greenyellow;
+        }
+
+        .Perico {
+            background-color: blue;
+            border: 0cap;
+            border-radius: 5px;
+        }
+
+        label {
+            color: rgb(255, 255, 255);
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-color: coral;
+            border-radius: 5px;
+            float: left;
+            clear: both;
+        }
+         main{
+            clear: left;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+    <header>
+        <h1>Actividad 5 - Formularios en html</h1>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main >
+        <h2>Controles de formulario</h2>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label class="Perico" for="userName">Nombre</label>
+                <input type="text" name="userName" id="userName" autofocus>
+                <br>
+                <br>
+                <label class="Perico" for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <br>
+                <label class="Perico" for="URL">URL</label>
+                <input type="url" name="URL" id="URL" required>
+                <br>
+                <br>
+                <label class="Perico" for="ciudad">Ciudad</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="CO">Cordoba</option>
+                    <option value="SE">Sevilla</option>
+                    <option value="JA">Jaén</option>
+                    <option value="AL">Almeria</option>
+                    <option value="VA">Valencia</option>
+                    <option value="MA">Malaga</option>
+                    <option value="GR">Granada</option>
+                    <option value="HU">Huelva</option>
+                </select>
+                <br>
+                <br>
+                <datalist id="ciudadeslist">
+                    <option value="Cordoba"></option>
+                    <option value="Sevilla"></option>
+                    <option value="Jaén"></option>
+                    <option value="Almeria"></option>
+                    <option value="Valencia"></option>
+                    <option value="Malaga"></option>
+                    <option value="Granada"></option>
+                    <option value="Huelva"></option>
+                </datalist>
+
+                <label class="Perico" for="ciudadeslist">Elige una ciudad</label>
+                <input list="ciudadeslist" name="ciudadeslist" id="ciudadeslist">
+
+
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="Fecha">Fecha</label>
+                <input type="date" name="Fecha" id="Fecha">
+                <br>
+                <br>
+                <label for="Tiempo">Tiempo</label>
+                <input type="time" name="Tiempo" id="Tiempo">
+                <br>
+                <br>
+                <label for="Fecha y hora">Fecha y hora</label>
+                <input type="datetime" name="Fecha y hora" id="Fecha y hora">
+                <br>
+                <br>
+                <label for="Mes">Mes</label>
+                <input type="month" name="Mes" id="Mes">
+                <br>
+                <br>
+                <label for="Semana">Semana</label>
+                <input type="week" name="Semana" id="Semana">
+                <br>
+                <br>
+                <label for="Numero10-10">Numero(min -10, max 10)</label>
+                <input type="number" min="-10" max="10" name="Numero10-10" id="Numero10-10">
+                <br>
+                <br>
+                <label for="Telefono">Telefono</label>
+                <input type="tel" name="Telefono" id="Telefono">
+                <br>
+                <br>
+                <label for="Termino de busqueda">Termino de busqueda</label>
+                <input type="search" name="Termino de busqueda" id="Termino de busqueda">
+                <br>
+                <br>
+                <label for="Color favorito">Color favorito</label>
+                <input type="color" name="Color favorito" id="Color favorito">
+
+            </fieldset>
+            <fieldset>
+                <legend>Otros controles</legend>
+                <label for="Aficiones">Aficiones</label>
+                <input type="checkbox" name="cine" id="cine">
+                <label for="cine">Cine</label>
+                <input type="checkbox" name="Deportes" id="Deportes">
+                <label for="Deportes">Deportes</label>
+                <br>
+                <br>
+                <legend>Forma de pago</legend>
+                <input type="radio" name="Forma de pago" id="Visa" value="V">
+                <label for="Visa">Visa</label>
+                <input type="radio" name="Forma de pago" id="American Express" value="A">
+                <label for="American Express">American Express</label>
+                <input type="radio" name="Forma de pago" id="MasterCard" value="M">
+                <label for="MasterCard">MasterCard</label>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+
+        </form>
+    </main>
+</body>
+
+</html>

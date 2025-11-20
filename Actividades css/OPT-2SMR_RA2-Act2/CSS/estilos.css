@@ -1,0 +1,114 @@
+/*DEFINICIÓN DE VARIABLES DE COLORES*/
+:root {
+    --primary-color: #076896;
+    --primary-color_transparencia: #07689666;
+    --boton_activo_: #004466;
+}
+
+/* Contenedores principales */
+header, main, footer {
+    max-width: 900px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Estilos del encabezado */
+header {
+    padding: 2rem; /* Relleno interno */
+    background-color: #076896; /* Color de fondo azul */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    text-align: center; /* Alineación del texto al centro */
+    border-bottom: 8px; /* Grosor del borde inferior */
+    border-radius: 0 0 4px 4px; /* Bordes redondeados solo abajo */
+    
+    /* Estilos de la barra de navegación */
+    nav {
+        a {
+            color: rgb(255, 255, 255); /* Color del texto de los enlaces */
+            text-decoration: none; /* Elimina el subrayado */
+            margin: 0 0.5rem; /* Margen horizontal entre enlaces */
+            padding: 0.6rem 0.9rem; /* Relleno interno de los enlaces */
+        }
+    }
+}
+/* Pseudoclases*/
+.btn, .btn-sec {
+    /*border: 2px solid #006699;*/
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem 0.3rem 0.6rem 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover, .btn-sec:hover  {
+    background-color: var(--primary-color_transparencia);
+    transition:  background-color 0.5s;
+}
+
+
+
+
+
+
+
+/* Efecto hover para los enlaces de navegación */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente al pasar el ratón */
+    color: rgb(255, 255, 255); /* Color del texto al pasar el ratón */
+}
+
+/* Estilos generales de las secciones */
+section {
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 4px black; /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 1rem; /* Margen exterior */
+    padding: 1rem; /* Relleno interno */
+}
+/* ===== SECCIÓN RADIUS ===== */
+/* Contenedor de la fila de cajas */
+#radius .fila {
+    display: flex; /* Activa el modelo de caja flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+/* Estilos base para todas las cajas */
+#radius .box {
+    width: 100px; /* Ancho fijo */
+    height: 100px; /* Alto fijo */
+    background-color: #076896; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centrado horizontal del contenido */
+    align-items: center; /* Centrado vertical del contenido */
+    margin: 10px; /* Margen entre cajas */
+}
+
+/* Primera caja: esquina superior izquierda redondeada */
+#radius .b1 {
+    border-top-left-radius: 15px; /* Radio de la esquina superior izquierda */
+    border: 2px solid #076896; /* Borde sólido */
+}
+
+/* Segunda caja: esquina superior derecha redondeada */
+#radius .b2 {
+    border-top-right-radius: 15px; /* Radio de la esquina superior derecha */
+    border: 2px solid #076896; /* Borde sólido */
+}
+
+/* Tercera caja: todas las esquinas redondeadas */
+#radius .b3 {
+    border-radius: 15px; /* Radio para todas las esquinas */
+    border: 2px solid #076896; /* Borde sólido */}
+
+
+/*no fuciona arreglalo*/
+    section {
+    pseudoclases{
+        background-color: rgb(48, 255, 48);
+    }
+}

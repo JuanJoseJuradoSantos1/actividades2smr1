@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- La etiqueta <head> contiene información para el navegador que no se ve en la página. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- La etiqueta <title> define el título que aparece en la pestaña del navegador. -->
+    <title>Guía de Etiquetas HTML y Estructura Semántica</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 25px; }
+        h1, h2 { border-bottom: 2px solid #007BFF; padding-bottom: 5px; }
+        h3 { color: #0056b3; }
+        code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
+        blockquote { border-left: 4px solid #ccc; padding-left: 15px; font-style: italic; }
+        table { border-collapse: collapse; width: 70%; margin-top: 15px;}
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left;}
+        th { background-color: #f2f2f2; }
+        hr { margin: 30px 0; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 6px; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Guía Completa de Etiquetas HTML con Ejemplos</h1>
+    <p>Este documento explica el uso de las etiquetas HTML más comunes con ejemplos claros.</p>
+
+    <hr>
+
+    <h2>Texto y Párrafos</h2>
+    <h3>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; - Títulos</h3>
+    <p>Sirven para definir títulos y subtítulos. <strong>&lt;h1&gt;</strong> es el más importante y <strong>&lt;h3&gt;</strong> es de menor rango.</p>
+    <p><em>Ejemplo:</em></p>
+    <h1>Título Principal del Artículo</h1>
+    <h2>Un subtítulo importante</h2>
+    <h3>Un punto específico dentro del subtítulo</h3>
+
+    <h3>&lt;p&gt; - Párrafo</h3>
+    <p>Crea un bloque de texto separado, es decir, un párrafo.</p>
+    <p>Este es un párrafo de texto que explica un concepto. Es la etiqueta más común para escribir texto.</p>
+
+    <h3>&lt;strong&gt; y &lt;b&gt; - Negrita</h3>
+    <p><strong>&lt;strong&gt;</strong> se usa para indicar importancia; <strong>&lt;b&gt;</strong> solo aplica negrita visual.</p>
+
+    <h3>&lt;em&gt; y &lt;i&gt; - Cursiva</h3>
+    <p><strong>&lt;em&gt;</strong> da énfasis. <strong>&lt;i&gt;</strong> se usa para palabras extranjeras o técnicas.</p>
+
+    <hr>
+
+    <h2>Saltos y Separadores</h2>
+    <h3>&lt;br&gt; - Salto de línea</h3>
+    <p>Ejemplo:</p>
+    <p>Calle de la Alegría, 24<br>28012, Madrid<br>España</p>
+
+    <h3>&lt;hr&gt; - Línea horizontal</h3>
+    <p>Sirve para separar secciones de contenido.</p>
+    <hr>
+
+    <h2>Citas</h2>
+    <h3>&lt;blockquote&gt; - Cita larga</h3>
+    <blockquote>
+        La imaginación es más importante que el conocimiento. El conocimiento es limitado, mientras que la imaginación abarca el mundo entero.
+    </blockquote>
+
+    <h3>&lt;q&gt; - Cita corta</h3>
+    <p>Como dijo mi abuelo, <q>nunca es tarde si la dicha es buena</q>.</p>
+
+    <h3>&lt;cite&gt; - Título de una obra</h3>
+    <p>Mi libro favorito es <cite>El Señor de los Anillos</cite>.</p>
+
+    <hr>
+
+    <h2>Listas</h2>
+    <h3>&lt;ul&gt; y &lt;ol&gt;</h3>
+    <p><strong>&lt;ul&gt;</strong> es desordenada y <strong>&lt;ol&gt;</strong> ordenada.</p>
+
+    <p>Ejemplo de lista desordenada:</p>
+    <ul>
+        <li>Leche</li>
+        <li>Pan</li>
+        <li>Manzanas</li>
+    </ul>
+
+    <p>Ejemplo de lista ordenada:</p>
+    <ol>
+        <li>Abrir la puerta</li>
+        <li>Encender la luz</li>
+        <li>Cerrar la puerta</li>
+    </ol>
+
+    <hr>
+
+    <h2>Formato de Texto Adicional</h2>
+    <h3>&lt;abbr&gt; - Abreviaturas</h3>
+    <p>Ejemplo: <abbr title="Organización Mundial de la Salud">OMS</abbr></p>
+
+    <h3>&lt;u&gt;, &lt;del&gt;, &lt;ins&gt;, &lt;s&gt;</h3>
+    <p>Mi fruta favorita es la <del>pera</del> <ins>manzana</ins>.</p>
+
+    <h3>&lt;code&gt; y &lt;pre&gt; - Código</h3>
+    <p>Ejemplo corto: <code>console.log("Hola Mundo")</code></p>
+    <pre>
+function saludar() {
+    console.log("¡Hola, mundo!");
+}
+    </pre>
+
+    <hr>
+
+    <h2>Enlaces e Imágenes</h2>
+    <h3>&lt;a&gt; - Enlace</h3>
+    <a href="https://www.google.com" target="_blank">Ir a Google</a>
+
+    <h3>&lt;img&gt; - Imagen</h3>
+    <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen">
+
+    <hr>
+
+    <h2 id="seccion_tabla">Tablas</h2>
+    <h3>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h3>
+    <table>
+      <thead>
+        <tr>
+            <th>Día</th>
+            <th>Actividad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Lunes</td>
+            <td>Trabajo</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>Descanso</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- NUEVA SECCIÓN AÑADIDA -->
+    <h1>Estructura Semántica en HTML5</h1>
+    <p>HTML5 incorporó nuevas etiquetas que permiten organizar el contenido con significado, facilitando la lectura por buscadores y lectores de pantalla.</p>
+
+    <h2>Estructura básica de una página moderna</h2>
+    <pre>
+<header>     → Cabecera del sitio o de una sección
+<nav>        → Menú o enlaces de navegación
+<main>       → Contenido principal de la página
+<article>    → Artículo o bloque de contenido independiente
+<section>    → Sección temática o agrupación de contenido
+<aside>      → Información complementaria o lateral
+<footer>     → Pie de página con créditos o enlaces secundarios
+    </pre>
+
+    <h2>Explicación de las etiquetas semánticas</h2>
+
+    <h3>&lt;header&gt; – Cabecera</h3>
+    <p>Contiene el título principal, logotipo o encabezado de la página o de una sección.</p>
+    <pre>
+<header>
+  <h1>Blog de Tecnología</h1>
+  <p>Noticias y tutoriales sobre informática</p>
+</header>
+    </pre>
+
+    <h3>&lt;nav&gt; – Navegación</h3>
+    <p>Define un bloque con enlaces de navegación a otras secciones o páginas.</p>
+    <pre>
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#articulos">Artículos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+    </pre>
+
+    <h3>&lt;main&gt; – Contenido principal</h3>
+    <p>Encierra el contenido central de la página, el que es único en cada vista. Solo debe haber uno por documento.</p>
+    <pre>
+<main>
+  <h2>Últimos artículos</h2>
+  <p>Bienvenido a la sección de artículos destacados.</p>
+</main>
+    </pre>
+
+    <h3>&lt;section&gt; – Sección temática</h3>
+    <p>Agrupa contenido que trata un mismo tema o categoría.</p>
+    <pre>
+<section>
+  <h2>Tutoriales de HTML</h2>
+  <p>Aprende a crear páginas web paso a paso.</p>
+</section>
+    </pre>
+
+    <h3>&lt;article&gt; – Contenido independiente</h3>
+    <p>Representa una unidad de contenido que tiene sentido por sí misma, como una noticia o una publicación.</p>
+    <pre>
+<article>
+  <h3>Cómo crear un formulario en HTML</h3>
+  <p>Los formularios permiten recoger información del usuario...</p>
+</article>
+    </pre>
+
+    <h3>&lt;aside&gt; – Contenido complementario</h3>
+    <p>Muestra información relacionada pero no esencial con el contenido principal.</p>
+    <pre>
+<aside>
+  <h4>Consejo</h4>
+  <p>Recuerda validar tu HTML con la herramienta W3C.</p>
+</aside>
+    </pre>
+
+    <h3>&lt;footer&gt; – Pie de página</h3>
+    <p>Contiene la parte inferior del documento, como créditos o información de contacto.</p>
+    <pre>
+<footer>
+  <p>© 2025 Blog de Tecnología - Todos los derechos reservados</p>
+</footer>
+    </pre>
+
+    <hr>
+
+    <h2>Ejemplo completo de estructura semántica</h2>
+    <pre>
+<header>
+  <h1>Mi Sitio Web</h1>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#articulos">Artículos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section>
+    <article>
+      <h2>Bienvenida</h2>
+      <p>Esta es la página principal de mi sitio web.</p>
+    </article>
+  </section>
+
+  <aside>
+    <p>Noticias relacionadas o enlaces de interés.</p>
+  </aside>
+</main>
+
+<footer>
+  <p>© 2025 Mi Sitio Web</p>
+</footer>
+    </pre>
+
+    <h2>Resumen</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Etiqueta</th>
+          <th>Función Principal</th>
+          <th>Tipo de Contenido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>&lt;header&gt;</td><td>Encabezado</td><td>Título, logo, menú superior</td></tr>
+        <tr><td>&lt;nav&gt;</td><td>Navegación</td><td>Enlaces internos o externos</td></tr>
+        <tr><td>&lt;main&gt;</td><td>Contenido principal</td><td>Artículos, secciones</td></tr>
+        <tr><td>&lt;section&gt;</td><td>Agrupación temática</td><td>Bloques de información</td></tr>
+        <tr><td>&lt;article&gt;</td><td>Contenido independiente</td><td>Noticias, posts</td></tr>
+        <tr><td>&lt;aside&gt;</td><td>Contenido lateral</td><td>Notas, enlaces, publicidad</td></tr>
+        <tr><td>&lt;footer&gt;</td><td>Pie de página</td><td>Créditos o información final</td></tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <p><strong>Fin de los apuntes de HTML y estructura semántica.</strong></p>
+
+</body>
+</html>
