@@ -3,6 +3,7 @@
     --primary-color: #076896;
     --primary-color_transparencia: #07689666;
     --boton_activo_: #004466;
+    --color_fondo_caja: #eaf6fb;
 }
 
 /* Contenedores principales */
@@ -30,6 +31,36 @@ header {
         }
     }
 }
+h2{
+    color: var(--boton_activo_);
+}
+
+/*Espaciados y bordes*/
+.caja{
+    margin: 0.01rem;
+    padding: 1rem; 
+    border: 2px solid var(--boton_activo_);
+    border-radius: 10px;
+    background-color: var(--color_fondo_caja);
+}
+
+/*selectores*
+borde azul muy claro
+borde 1px solido (#d0f0f5)
+relleno 0.3rem
+margen inferior 0.3rem
+*/
+.selectores > span {
+display: inline-block;
+background-color: var(--color_fondo_caja);
+border: 1px solid var(--boton_activo_);
+padding: 0.3rem;
+margin-bottom: 0.3rem;
+}
+
+ 
+
+
 /* Pseudoclases*/
 .btn, .btn-sec {
     /*border: 2px solid #006699;*/
@@ -47,11 +78,12 @@ header {
     transition:  background-color 0.5s;
 }
 
+.lista-demo li:first-child {
+    color: var(--boton_activo_);
+    font-weight: bold;
+}
 
-
-
-
-
+/*Aplicar estilos comunes 
 
 /* Efecto hover para los enlaces de navegación */
 nav a:hover {
@@ -106,9 +138,4 @@ section {
     border: 2px solid #076896; /* Borde sólido */}
 
 
-/*no fuciona arreglalo*/
-    section {
-    pseudoclases{
-        background-color: rgb(48, 255, 48);
-    }
-}
+
